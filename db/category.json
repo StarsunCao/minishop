@@ -1,0 +1,16 @@
+{
+  "_id": "5155a55e5f02ce8700547a9b3641be8f",
+  "priority": 3.0,
+  "title": "酒水",
+  "_openid": "o3PLz0K49FdKwyk5mDiZ5octOUGw"
+} {
+  "_id": "a81822d65f017e2f004ed1fb69908922",
+  "_openid": "o3PLz0O6jRwAbHtSvqEQFFztH7F8",
+  "priority": 0.0,
+  "title": "热菜"
+} {
+  "_id": "f11f525b5f017e26004ab22a10973559",
+  "_openid": "o3PLz0O6jRwAbHtSvqEQFFztH7F8",
+  "priority": -1.0,
+  "title": "主食"
+}

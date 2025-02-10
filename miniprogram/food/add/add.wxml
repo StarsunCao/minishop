@@ -1,0 +1,60 @@
+<!-- 分类管理 -->
+<form onsubmit="add">
+	<view class="item">
+		<view class="title">商品名称</view>
+		<view class="subtitle">
+			<input type="text" name="title" value="{{food.title}}" placeholder="请填写商品名称" />
+		</view>
+	</view>
+	<view class="item">
+		<view class="title">分类</view>
+		<view class="subtitle">
+			<picker mode="selector" range="{{categories}}" range-key="title" value="{{categoryIndex}}" bindchange="bindCategoryChanged">
+				<view class="picker">
+				<!-- {{categories[categoryIndex].title ? categories[categoryIndex].title : category.title}} -->
+				{{categories[categoryIndex].title}}
+				</view>
+			</picker>
+		</view>
+	</view>
+  <view class="item">
+		<view class="title">原价</view>
+		<view class="subtitle">
+			<input type="digit" name="o_price" value="{{food.o_price}}" placeholder="请填写原价" />
+		</view>
+	</view>
+	<view class="item">
+		<view class="title">售价</view>
+		<view class="subtitle">
+			<input type="digit" name="price" value="{{food.price}}" placeholder="请填写售价" />
+		</view>
+	</view>
+	<view class="item">
+		<view class="title">简述</view>
+		<view class="subtitle">
+			<input type="text" name="summary" value="{{food.summary}}" placeholder="一句话描述" />
+		</view>
+	</view>
+  <view class="item">
+		<view class="title">库存</view>
+		<view class="subtitle">
+			<input type="number" name="inventory" value="{{food.inventory}}" placeholder="请填写库存" />
+		</view>
+	</view>
+	<view class="item">
+		<view class="title">排列序号</view>
+		<view class="subtitle">
+			<input type="digit" name="priority" value="{{food.priority}}" placeholder="序号越小越靠前" />
+		</view>
+	</view>
+	<view class="item">
+		<view class="title">图片</view>
+		<view class="subtitle">
+			<image src="{{thumb_url ? thumb_url : '/images/upload.png'}}" bindtap="upload" />
+		</view>
+	</view>
+	<view class="buttons">
+		<button wx:if="{{isEdit}}" class="delete" bindtap="delete">删除</button>
+		<button form-type="submit" class="confirm">{{isEdit ? '修改' : '添加'}}</button>
+	</view>
+</form>

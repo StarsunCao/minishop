@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "shop/index/index",
+    "order/list/list",
+    "member/index/index",
+    "category/list/list",
+    "address/list/list",
+    "food/list/list",
+    "food/add/add",
+    "category/add/add",
+    "shop/setting/setting",
+    "order/remark/remark",
+    "order/checkout/checkout",
+    "address/add/add",
+    "order/detail/detail",
+    "agreement/user/user",
+    "agreement/privacy/privacy"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0099ff",
+    "navigationBarTitleText": "商品",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#0099ff",
+    "list": [
+      {
+        "pagePath": "shop/index/index",
+        "iconPath": "images/icon_home.png",
+        "selectedIconPath": "images/icon_home_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "order/list/list",
+        "iconPath": "images/icon_cate.png",
+        "selectedIconPath": "images/icon_cate_selected.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "member/index/index",
+        "iconPath": "images/icon_member.png",
+        "selectedIconPath": "images/icon_member_selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "快速显示你当前的地址"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

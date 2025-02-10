@@ -1,0 +1,25 @@
+/* agreement/privacy/privacy.wxss */
+
+.title{
+  font-size: larger;
+  margin: 10px;
+  font-weight:bold;
+}
+
+.textbox{
+  margin: 10px;
+}
+
+.box{
+  margin: 10px;
+}
+
+.subtitle{
+  font-size: large;
+  margin: 10px;
+}
+
+.date{
+  text-align:right;
+  margin: 15px;
+}
